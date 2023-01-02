@@ -1,0 +1,10 @@
+- Create a vehicle database
+
+CREATE TABLE cars (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, aisle INTEGER);
+INSERT INTO cars VALUES (1, "camry", 5, 7);
+INSERT INTO cars VALUES(2, "corolla", 1, 2);
+INSERT INTO cars VALUES(3, "civic", 2, 2);
+INSERT INTO cars VALUES(4, "accord", 1, 12);
+INSERT INTO cars VALUES(5, "tesla", 6, 2);
+INSERT INTO cars VALUES(6, "lambo", 1, 4);
+SELECT SUM(quantity) FROM cars GROUP BY aisle;
