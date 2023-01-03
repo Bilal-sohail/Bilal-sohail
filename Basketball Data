@@ -11,3 +11,12 @@ CREATE TABLE players(
    Insert into players (player, team, conference,position,Jersey_number) values('jordan', 'bulls', 'West', 'pg', 23);
    Insert into players (player, team, conference,position,Jersey_number) values('shaq', 'lakers', 'West', 'c', 32);
    Insert into players (player, team, conference,position,Jersey_number) values('lamar', 'lakers', 'West', 'pf',7);
+
+---What are average, max, and min values in the data?
+select MIN(jersey_number) from players;
+select max(jersey_number) from players;
+select avg(jersey_number) from players;
+
+--What interesting ways are there to filter the data (using AND/OR)?
+select * from players
+where team= 'lakers' and position='sg'
