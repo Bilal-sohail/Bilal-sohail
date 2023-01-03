@@ -1,0 +1,13 @@
+--Create a new table
+CREATE TABLE players(
+   Player TEXT,
+   Team TEXT,
+   Conference TEXT,
+   Position TEXT,
+   Jersey_number INTEGER);
+   
+   Insert into players (player, team, conference,position, jersey_number) values('Kobe', 'lakers', 'West', 'sg', 24);
+   Insert into players (player, team, conference,position,Jersey_number) values('lebron', 'lakers', 'West', 'sf', 23);
+   Insert into players (player, team, conference,position,Jersey_number) values('jordan', 'bulls', 'West', 'pg', 23);
+   Insert into players (player, team, conference,position,Jersey_number) values('shaq', 'lakers', 'West', 'c', 32);
+   Insert into players (player, team, conference,position,Jersey_number) values('lamar', 'lakers', 'West', 'pf',7);
